@@ -807,12 +807,14 @@ a.tmm-val:hover{color:#E3C49A}
       _template:'table', _captcha:'false'
     };
     fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
-      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(r){return r.json().catch(function(){return {};}).then(function(j){return {ok:r.ok,status:r.status,j:j};});})
       .then(function(res){
-        if(res.ok && String(res.j.success)==='true'){form.reset();say('Thank you! Your message is on its way — we\'ll get back to you within one working day.',true);}
-        else throw new Error(res.j && res.j.message);
+        var msg=(res.j&&res.j.message)||'';
+        if(res.ok && String(res.j.success)==='true'){form.reset();say('Thank you! Your message is on its way — we\'ll get back to you within one working day.',true);return;}
+        if(/activat/i.test(msg)){say('Almost there: this form is waiting for activation. The site owner needs to click the activation link sent to cmo@twomonksmarketing.com.',false);return;}
+        throw new Error(msg||('HTTP '+res.status));
       })
-      .catch(function(){say('Sorry, that didn\'t go through. Please call +91 80757 80938 or email cmo@twomonksmarketing.com.',false);})
+      .catch(function(err){if(window.console)console.warn('Form error:',err&&err.message);say('Sorry, that didn\'t go through. Please call +91 80757 80938 or email cmo@twomonksmarketing.com.',false);})
       .finally(function(){btn.disabled=false;label.textContent='Send enquiry';});
   });
 })();
