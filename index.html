@@ -16,7 +16,7 @@
 <meta property="og:image" content="/og-image.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="/og-image.jpg">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MarketingAgency","name":"Two Monks Marketing","url":"https://twomonksmarketing.com/","logo":"https://twomonksmarketing.com/tmm-logo.webp","telephone":"+91-8075780938","email":"twomonksmarketing@gmail.com","foundingDate":"2019","address":{"@type":"PostalAddress","addressLocality":"Koramangala, Bengaluru","addressRegion":"Karnataka","addressCountry":"IN"},"sameAs":["https://www.instagram.com/twomonksmarketing/"]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MarketingAgency","name":"Two Monks Marketing","url":"https://twomonksmarketing.com/","logo":"https://twomonksmarketing.com/tmm-logo.webp","telephone":"+91-8075780938","email":"cmo@twomonksmarketing.com","foundingDate":"2019","address":{"@type":"PostalAddress","addressLocality":"Koramangala, Bengaluru","addressRegion":"Karnataka","addressCountry":"IN"},"sameAs":["https://www.instagram.com/twomonksmarketing/"]}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&amp;family=Instrument+Serif:ital@0;1&amp;family=Manrope:wght@400;500;600;700&amp;display=swap">
@@ -48,6 +48,26 @@ html{scroll-behavior:smooth}
 .tmm-filter.is-on{background:#D9B98F;color:#1A1310;border-color:#D9B98F}
 .tmm-work[hidden]{display:none!important}
 :focus-visible{outline:2px solid #D9B98F;outline-offset:3px;border-radius:6px}
+
+.tmm-ico{width:48px;height:48px;flex:none;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(217,185,143,.12);border:1px solid rgba(217,185,143,.28);color:#E3C49A}
+.tmm-lbl{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#A8968A}
+.tmm-val{font-size:17px;font-weight:600;color:#F3E9DC;overflow-wrap:break-word}
+a.tmm-val:hover{color:#E3C49A}
+.tmm-social{width:48px;height:48px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#F3E9DC;color:#2B201A;transition:transform .2s ease,background .2s ease}
+.tmm-social:hover{transform:translateY(-3px);background:#D9B98F;color:#1A1310}
+.tmm-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px}
+.tmm-field{display:flex;flex-direction:column;gap:8px;font-size:13px;font-weight:600;color:#CDBCA9}
+.tmm-field input,.tmm-field select,.tmm-field textarea{width:100%;font:500 16px 'Manrope',system-ui,sans-serif;color:#F3E9DC;background:#231915;border:1px solid rgba(233,211,180,.14);border-radius:14px;padding:15px 18px;outline:none;transition:border-color .2s ease,background .2s ease}
+.tmm-field textarea{resize:vertical;min-height:120px}
+.tmm-field select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23D9B98F' stroke-width='2.4' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center;padding-right:44px}
+.tmm-field select option{background:#231915;color:#F3E9DC}
+.tmm-field input::placeholder,.tmm-field textarea::placeholder{color:#8C7B6E}
+.tmm-field input:focus,.tmm-field select:focus,.tmm-field textarea:focus{border-color:#D9B98F;background:#2A1F19}
+.tmm-field .is-bad{border-color:#E08A6E!important}
+.tmm-submit{margin-top:6px;display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;border:0;border-radius:16px;background:#D9B98F;color:#1A1310;font:700 17px 'Manrope',sans-serif;cursor:pointer}
+.tmm-submit:disabled{opacity:.65;cursor:progress;transform:none;box-shadow:none}
+.tmm-wa{position:fixed;right:22px;bottom:22px;z-index:60;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:#8E9C6B;color:#17110E;box-shadow:0 18px 40px -12px rgba(0,0,0,.7),0 0 0 6px rgba(142,156,107,.18);transition:transform .2s ease}
+.tmm-wa:hover{transform:scale(1.07);color:#17110E}
 </style>
 </head>
 <body>
@@ -647,40 +667,82 @@ html{scroll-behavior:smooth}
 
   <!-- ============ CTA / CONTACT ============ -->
   <section id="contact" style="padding: 112px 24px 96px">
-    <div style="max-width: 1280px; margin: 0 auto; position: relative; border-radius: 32px; overflow: hidden; background: #2B201A; border: 1px solid rgba(217,185,143,0.22); padding: clamp(36px, 6vw, 80px)">
-      <div aria-hidden="true" style="position: absolute; right: -120px; top: -120px; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(circle, rgba(217,185,143,0.22) 0%, rgba(43,32,26,0) 68%)"></div>
-      <img src="tmm-logo.webp" alt="" aria-hidden="true" class="tmm-hide-sm" style="position: absolute; right: 56px; bottom: 56px; width: 190px; height: 190px; border-radius: 50%; opacity: 0.92; box-shadow: 0 0 0 10px rgba(217,185,143,0.10)">
-      <div style="position: relative; display: flex; flex-direction: column; gap: 28px; max-width: 820px">
-        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #A9B98A">Let's talk</span>
-        <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(40px, 5.6vw, 80px); line-height: 0.98; letter-spacing: -0.035em">Ready to build a growth engine <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: #D9B98F">that actually works?</span></h2>
-        <p style="margin: 0; font-size: 18px; line-height: 1.65; color: #CDBCA9; max-width: 600px">Tell us where your brand is today and where you want it to be. We'll come back with a clear plan — channels, creatives, budgets and the numbers we'll be accountable for.</p>
-        <div style="display: flex; flex-wrap: wrap; gap: 14px">
-          <a href="mailto:twomonksmarketing@gmail.com" class="tmm-btn" style="display: inline-flex; align-items: center; gap: 10px; min-height: 54px; padding: 0 28px; border-radius: 999px; background: #D9B98F; color: #1A1310; font-weight: 700; font-size: 16px">
-            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
-            Email us
-          </a>
-          <a href="tel:+918075780938" class="tmm-ghost" style="display: inline-flex; align-items: center; gap: 10px; min-height: 54px; padding: 0 26px; border-radius: 999px; border: 1px solid rgba(233,211,180,0.28); color: #E8DACA; font-weight: 600; font-size: 16px; background: transparent">
-            <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg>
-            Call +91 80757 80938
-          </a>
+    <div style="max-width: 1280px; margin: 0 auto; position: relative; border-radius: 32px; overflow: hidden; background: #2B201A; border: 1px solid rgba(217,185,143,0.22); padding: clamp(28px, 5vw, 72px)">
+      <div aria-hidden="true" style="position: absolute; left: -160px; top: -160px; width: 560px; height: 560px; border-radius: 50%; background: radial-gradient(circle, rgba(217,185,143,0.18) 0%, rgba(43,32,26,0) 68%)"></div>
+      <div style="position: relative; display: flex; flex-wrap: wrap; gap: clamp(40px, 5vw, 72px); align-items: stretch">
+
+        <!-- Left: pitch + contact details -->
+        <div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+          <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase; color: #A9B98A">Contact us</span>
+          <h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(38px, 4.6vw, 66px); line-height: 0.98; letter-spacing: -0.035em">Ready to build a growth engine <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: #D9B98F">that actually works?</span></h2>
+          <p style="margin: 0; font-size: 17px; line-height: 1.65; color: #CDBCA9; max-width: 520px">Tell us where your brand is today and where you want it to be. We'll come back within one working day with a clear plan — channels, creatives, budgets and the numbers we'll be accountable for.</p>
+
+          <ul style="list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 18px">
+            <li style="display: flex; align-items: center; gap: 16px">
+              <span class="tmm-ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"></path></svg></span>
+              <span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span class="tmm-lbl">Call us</span><a href="tel:+918075780938" class="tmm-val">+91 80757 80938</a></span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 16px">
+              <span class="tmm-ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg></span>
+              <span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span class="tmm-lbl">Email us</span><a href="mailto:cmo@twomonksmarketing.com" class="tmm-val">cmo@<wbr>twomonksmarketing.com</a></span>
+            </li>
+            <li style="display: flex; align-items: center; gap: 16px">
+              <span class="tmm-ico"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"></path><circle cx="12" cy="10" r="2.6"></circle></svg></span>
+              <span style="display: flex; flex-direction: column; gap: 2px; min-width: 0"><span class="tmm-lbl">Studio</span><span class="tmm-val">Koramangala, Bengaluru</span></span>
+            </li>
+          </ul>
+
+          <div style="display: flex; gap: 12px; padding-top: 6px">
+            <a href="https://www.instagram.com/twomonksmarketing/" class="tmm-social" aria-label="Two Monks Marketing on Instagram" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg>
+            </a>
+            <a href="https://wa.me/918075780938" class="tmm-social" aria-label="Chat with Two Monks Marketing on WhatsApp" target="_blank" rel="noopener">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"></path></svg>
+            </a>
+            <a href="mailto:cmo@twomonksmarketing.com" class="tmm-social" aria-label="Email Two Monks Marketing">
+              <svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>
+            </a>
+          </div>
         </div>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px 32px; padding-top: 28px; border-top: 1px solid rgba(233,211,180,0.14); max-width: 860px">
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8968A">Email</span>
-            <a href="mailto:twomonksmarketing@gmail.com" style="font-size: 16px; font-weight: 600; color: #F3E9DC">twomonksmarketing@gmail.com</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8968A">Phone</span>
-            <a href="tel:+918075780938" style="font-size: 16px; font-weight: 600; color: #F3E9DC">+91 80757 80938</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 6px">
-            <span style="font-size: 12px; letter-spacing: 0.16em; text-transform: uppercase; color: #A8968A">Studio</span>
-            <span style="font-size: 16px; font-weight: 600; color: #F3E9DC">Koramangala, Bengaluru</span>
-          </div>
+
+        <!-- Right: enquiry form -->
+        <div style="flex: 1 1 420px; min-width: 0; background: #17110E; border: 1px solid rgba(233,211,180,0.12); border-radius: 26px; padding: clamp(24px, 3.5vw, 44px); box-shadow: 0 40px 80px -40px rgba(0,0,0,0.7)">
+          <form id="tmm-form" novalidate style="display: flex; flex-direction: column; gap: 16px">
+            <h3 style="margin: 0 0 8px; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 3.4vw, 46px); letter-spacing: -0.03em; color: #F3E9DC">Get in <span style="font-family: 'Instrument Serif', serif; font-style: italic; font-weight: 400; color: #D9B98F">touch</span></h3>
+            <div class="tmm-row">
+              <label class="tmm-field"><span>Your name *</span><input name="name" type="text" autocomplete="name" required placeholder="e.g. Ananya Rao"></label>
+              <label class="tmm-field"><span>Phone *</span><input name="phone" type="tel" autocomplete="tel" required placeholder="+91 98765 43210"></label>
+            </div>
+            <label class="tmm-field"><span>Email *</span><input name="email" type="email" autocomplete="email" required placeholder="you@brand.com"></label>
+            <label class="tmm-field"><span>What do you need help with?</span>
+              <select name="service">
+                <option value="">Choose a service</option>
+                <option>Meta Ads</option>
+                <option>Google Ads</option>
+                <option>Amazon Ads</option>
+                <option>Branding</option>
+                <option>Social Media Management</option>
+                <option>Video Editing</option>
+                <option>Web &amp; Shopify Development</option>
+                <option>Not sure yet — need a growth audit</option>
+              </select>
+            </label>
+            <label class="tmm-field"><span>Message *</span><textarea name="message" rows="4" required placeholder="Tell us about your brand, goals and monthly budget"></textarea></label>
+            <input type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" style="position: absolute; left: -9999px; width: 1px; height: 1px">
+            <button type="submit" class="tmm-btn tmm-submit">
+              <span class="tmm-submit-label">Send enquiry</span>
+              <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </button>
+            <p id="tmm-form-status" role="status" aria-live="polite" style="margin: 0; min-height: 22px; font-size: 14px; font-weight: 600"></p>
+          </form>
         </div>
       </div>
     </div>
   </section>
+
+  <a href="https://wa.me/918075780938" class="tmm-wa" aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener">
+    <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"></path></svg>
+  </a>
 
   <!-- ============ FOOTER ============ -->
   <footer style="padding: 0 24px 40px">
@@ -714,6 +776,44 @@ html{scroll-behavior:smooth}
       btns.forEach(function(x){var on=x===b;x.classList.toggle('is-on',on);x.setAttribute('aria-pressed',on?'true':'false');});
       cards.forEach(function(c){c.hidden=!(cat==='All'||c.getAttribute('data-cat')===cat);});
     });
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var ENDPOINT='https://formsubmit.co/ajax/cmo@twomonksmarketing.com';
+  var form=document.getElementById('tmm-form'); if(!form) return; var F=form.elements;
+  var status=document.getElementById('tmm-form-status');
+  var btn=form.querySelector('.tmm-submit'), label=form.querySelector('.tmm-submit-label');
+  function say(msg,ok){status.textContent=msg;status.style.color=ok?'#C8D4AC':'#F0A58C';}
+  form.addEventListener('submit',function(e){
+    e.preventDefault();
+    if(F['_honey'].value) return;
+    var bad=null;
+    ['name','phone','email','message'].forEach(function(n){
+      var el=F[n], v=el.value.trim(), ok=!!v;
+      if(n==='email') ok=/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+      if(n==='phone') ok=v.replace(/\D/g,'').length>=7;
+      el.classList.toggle('is-bad',!ok); if(!ok&&!bad) bad=el;
+    });
+    if(bad){say('Please fill in your name, a valid phone, email and a message.',false);bad.focus();return;}
+    btn.disabled=true; label.textContent='Sending…'; say('',true);
+    var d={
+      name:F['name'].value.trim(), phone:F['phone'].value.trim(), email:F['email'].value.trim(),
+      service:F['service'].value||'Not specified', message:F['message'].value.trim(),
+      _replyto:F['email'].value.trim(),
+      _subject:'New enquiry from '+F['name'].value.trim()+' — twomonksmarketing.com',
+      _template:'table', _captcha:'false'
+    };
+    fetch(ENDPOINT,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify(d)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(res){
+        if(res.ok && String(res.j.success)==='true'){form.reset();say('Thank you! Your message is on its way — we\'ll get back to you within one working day.',true);}
+        else throw new Error(res.j && res.j.message);
+      })
+      .catch(function(){say('Sorry, that didn\'t go through. Please call +91 80757 80938 or email cmo@twomonksmarketing.com.',false);})
+      .finally(function(){btn.disabled=false;label.textContent='Send enquiry';});
   });
 })();
 </script>
